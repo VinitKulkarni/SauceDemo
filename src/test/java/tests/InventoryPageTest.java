@@ -52,8 +52,8 @@ public class InventoryPageTest extends SauceDemoBaseClass {
 		String expectedLastProductPrice = UtilityClass.readDataFromExcelFile(12, 0);
 		
 		List<WebElement> actualAllProductsNames = inventoryPageObj.getAllProductsList();
-		String actualFirstProductName = actualAllProductsNames.getFirst().getText();
-		String actualLastProductName = actualAllProductsNames.getLast().getText();
+		String actualFirstProductName = actualAllProductsNames.get(0).getText();
+		String actualLastProductName = actualAllProductsNames.get(actualAllProductsNames.size() - 1).getText();
 		
 		String expectedFirstProductName = UtilityClass.readDataFromExcelFile(13, 0);
 		String expectedLastProductName = UtilityClass.readDataFromExcelFile(14, 0);
