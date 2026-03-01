@@ -38,9 +38,9 @@ public class InventoryPage {
 		selectObj.selectByVisibleText("Price (low to high)");
 		
 		if(key.equals("firstProductPrice")) {
-			return allProductPriceList.getFirst().getText();
+			return allProductPriceList.get(0).getText();
 		}else {
-			return allProductPriceList.getLast().getText();
+			return allProductPriceList.get(allProductPriceList.size() - 1).getText();
 		}
 	}
 	
