@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="3">
+  <test name="Test">
+  <parameter name="browserName" value="firefox"></parameter>
+    <classes>
+      <class name="tests.CheckOutOverViewPageTest"/>
+      <class name="tests.LoginPageTest"/>
+      <class name="tests.OrderPlacedPageTest"/>
+      <class name="tests.AddPersonInfoPageTest"/>
+      <class name="tests.ProductPageTest"/>
+      <class name="tests.ViewCartPageTest"/>
+      <class name="tests.InventoryPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
